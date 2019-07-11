@@ -75,16 +75,6 @@ ok()
 }
 
 ######################################
-# Print version of this repository
-######################################
-version() {
-  commit=$(git log -1 --pretty=%H)
-  date=$(git log -1 --pretty=%cd)
-  echo "Commit: ${commit}"
-  echo "Date: ${date}"
-}
-
-######################################
 # Execute a given command and exit if error code is found.
 # the command string will be executed.
 ######################################
