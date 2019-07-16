@@ -20,7 +20,7 @@
 
 set -e
 
-DEFAULT_INSTALL=true
+DEFAULT_INSTALL=false
 
 if [[ "$DEFAULT_INSTALL" != "true" ]]; then
   echo "default not install, skip"

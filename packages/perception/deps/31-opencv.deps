@@ -3,7 +3,7 @@
 
 set -e
 
-DEFAULT_INSTALL=true
+DEFAULT_INSTALL=false
 BINARY_INSTALL=false
 
 install_binary()
