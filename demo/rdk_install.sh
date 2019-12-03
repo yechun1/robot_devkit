@@ -2,11 +2,14 @@
 
 set -e
 
+export CFLAGS="-O3 -march=core-avx2 -mfpmath=sse -funroll-loops"
+export CXXFLAGS="-Ofast -march=core-avx2 -mfpmath=sse -funroll-loops"
+
 ./rdk.sh config --default
 ./rdk.sh install-deps
 ./rdk.sh sync-src
 ./rdk.sh build --cmake-args -DCMAKE_BUILD_TYPE=Release
-./rdk.sh install
+#./rdk.sh install
 
 
 # Generate tarball and install to remote device
