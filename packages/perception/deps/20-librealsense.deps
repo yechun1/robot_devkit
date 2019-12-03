@@ -21,7 +21,7 @@
 set -e
 
 DEFAULT_INSTALL=true
-BINARY_INSTALL=true
+BINARY_INSTALL=false
 
 CURRENT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
 
@@ -67,7 +67,7 @@ build_from_src()
   cd "${TARGET_DIR}"
   if [[ ! -d librealsense ]]
   then
-    git clone --depth 1 https://github.com/IntelRealSense/librealsense.git -b v2.17.1
+    git clone --depth 1 https://github.com/IntelRealSense/librealsense.git -b v2.30.0
   fi
   sudo apt-get install -y \
     libudev-dev \
