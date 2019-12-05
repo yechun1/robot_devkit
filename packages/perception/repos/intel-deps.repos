@@ -1,0 +1,13 @@
+repositories:
+  intel/ros2_object_msgs:
+    type: git
+    url: https://github.com/intel/ros2_object_msgs.git
+    version: master
+  intel/vision_opencv:
+    type: git
+    url: https://github.com/ros-perception/vision_opencv.git
+    version: dashing
+  intel/pcl_conversions:
+    type: git
+    url: https://github.com/ros2/pcl_conversions.git
+    version: dashing
