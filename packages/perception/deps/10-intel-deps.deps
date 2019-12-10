@@ -41,6 +41,7 @@ install_intel_deps_binary()
   echo "Install object_msgs"
   sudo apt-get install -y ros-dashing-object-msgs
 
+  sudo apt-get install -y libboost-python-dev libpcl-dev
 }
 
 release_package()
