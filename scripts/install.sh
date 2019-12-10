@@ -37,17 +37,11 @@ install_rdk()
   sudo mkdir -p "${target_dir}"
 
   info "setup robot_devkit"
-  if [[ -d /opt/ros/dashing ]]; then
 
     # Generate setup bash file
     sudo bash -c "cat << EOF > ${target_dir}/robot_devkit_setup.bash
 #!/bin/bash
-. /opt/ros/dashing/local_setup.bash
 EOF"
-  else
-    warn "Not found: ${ros2_core}"
-    exit
-  fi
 
 
   # Install packages to /opt/robot_devkit
