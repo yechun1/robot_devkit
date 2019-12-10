@@ -133,6 +133,11 @@ sync_src()
     exit 1
   fi
 
+sudo apt-get update && sudo apt-get install -y \
+  python-rosdep \
+  python3-vcstool \
+  python3-colcon-common-extensions
+
   read -r -a del_pkgs <<< "$(get_packages_delete_list)"
   for del_pkg in "${del_pkgs[@]}"
   do

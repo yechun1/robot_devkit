@@ -19,7 +19,7 @@
 
 set -e
 
-DEFAULT_INSTALL=true
+DEFAULT_INSTALL=false
 BINARY_INSTALL=true
 
 CURRENT_DIR=$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")
